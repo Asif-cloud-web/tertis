@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    display: flex;
+    gap: 20px;
+}
+
+.game-board {
+    width: 300px;
+    height: 600px;
+    background-color: #111;
+    border: 2px solid #333;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1px;
+    padding: 1px;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 150px;
+}
+
+.next-piece-container, .score-container, .level-container, .lines-container {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.next-piece {
+    width: 120px;
+    height: 120px;
+    background-color: #111;
+    margin: 10px auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    padding: 1px;
+}
+
+/* Tetris piece colors */
+.cell {
+    background-color: #222;
+}
+
+.cell.I { background-color: #00f0f0; }
+.cell.J { background-color: #0000f0; }
+.cell.L { background-color: #f0a000; }
+.cell.O { background-color: #f0f000; }
+.cell.S { background-color: #00f000; }
+.cell.T { background-color: #a000f0; }
+.cell.Z { background-color: #f00000; }
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

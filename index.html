@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-board" id="board"></div>
+        <div class="side-panel">
+            <div class="next-piece-container">
+                <h3>Next Piece</h3>
+                <div class="next-piece" id="next-piece"></div>
+            </div>
+            <div class="score-container">
+                <h3>Score</h3>
+                <div id="score">0</div>
+            </div>
+            <div class="level-container">
+                <h3>Level</h3>
+                <div id="level">1</div>
+            </div>
+            <div class="lines-container">
+                <h3>Lines</h3>
+                <div id="lines">0</div>
+            </div>
+            <button id="start-button">Start Game</button>
+            <button id="pause-button">Pause</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
